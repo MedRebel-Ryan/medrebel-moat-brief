@@ -284,6 +284,41 @@ html, body {
 /* Investor Takeaway: blue lead phrases */
 .card.takeaway li strong { color: var(--royal); }
 
+/* VALUATION BAND GRID (used on appraisal page) */
+.band-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8pt;
+  margin-top: 4pt;
+}
+.band-cell {
+  text-align: center;
+  padding: 5pt 6pt;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 5pt;
+}
+.band-cell .tier {
+  font-size: 7.5pt;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 3pt;
+}
+.band-cell .amount {
+  font-size: 15pt;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.5px;
+  line-height: 1;
+  margin-bottom: 2pt;
+}
+.band-cell .formula {
+  font-size: 7.5pt;
+  color: var(--muted);
+}
+
 /* WEB VIEW: keep body and container constrained so the brief is readable in a browser */
 @media screen {
   body { background: #E8EBF0; padding: 24px 0; }
@@ -330,7 +365,7 @@ html, body {
 <header class="dark-header">
   <div class="title-left">
     <div class="brief">Competitive Landscape</div>
-    <div class="meta">May 2026  ·  Confidential  ·  Page 1 of 2</div>
+    <div class="meta">May 2026  ·  Confidential  ·  Page 1 of 3</div>
   </div>
   <div class="logo-right">
     <img src="HR_Logo_Dark_Clean.svg" alt="MedRebel HR">
@@ -423,7 +458,7 @@ html, body {
 <header class="dark-header">
   <div class="title-left">
     <div class="brief">Proprietary &amp; Moat Brief</div>
-    <div class="meta">May 2026  ·  Confidential  ·  Page 2 of 2</div>
+    <div class="meta">May 2026  ·  Confidential  ·  Page 2 of 3</div>
   </div>
   <div class="logo-right">
     <img src="HR_Logo_Dark_Clean.svg" alt="MedRebel HR">
@@ -483,6 +518,113 @@ html, body {
 </div>
 
 
+
+<!-- ============================ PAGE 3 ============================ -->
+<div class="page">
+
+<header class="dark-header">
+  <div class="title-left">
+    <div class="brief">Appraised Value Brief</div>
+    <div class="meta">May 2026  ·  Confidential  ·  Page 3 of 3</div>
+  </div>
+  <div class="logo-right">
+    <img src="HR_Logo_Dark_Clean.svg" alt="MedRebel HR">
+  </div>
+</header>
+
+<div class="body-pad">
+
+  <div class="valuebox">
+    <div class="label">Appraised Value</div>
+    <div class="value">$555K <span class="unit">to $740K</span></div>
+    <div class="basis">9,300 raw developer hours (COCOMO II), less a 60 percent AI-assisted productivity discount, equals 3,700 effective senior hours. Valued at 2026 healthcare market rates. Verified by independent codebase audit.</div>
+  </div>
+
+  <div class="statrow">
+    <div class="statpill"><div class="num">3,700</div><div class="cap">Senior Developer Hours</div></div>
+    <div class="statpill"><div class="num">81</div><div class="cap">Days From Start to Live</div></div>
+    <div class="statpill"><div class="num">93,629</div><div class="cap">Lines of Code</div><div class="sub">Across 1,432 saved versions</div></div>
+    <div class="statpill"><div class="num">$0</div><div class="cap">Debt or Outside Funding</div></div>
+  </div>
+
+  <div class="two-card">
+    <div class="card">
+      <h3>What's Inside the App (Verified)</h3>
+      <ul>
+        <li><span class="lbl">Database tables</span><span class="val">68</span></li>
+        <li><span class="lbl">Row-level security policies</span><span class="val">252</span></li>
+        <li><span class="lbl">Backend functions (edge + Postgres)</span><span class="val">189</span></li>
+        <li><span class="lbl">React components, pages, hooks</span><span class="val">245</span></li>
+        <li><span class="lbl">Triggers, indexes, enums, buckets</span><span class="val">229</span></li>
+        <li><span class="lbl">Production TypeScript LOC</span><span class="val">93,629</span></li>
+        <li><span class="lbl">Independent security audits</span><span class="val">5 rounds</span></li>
+      </ul>
+      <p class="source">Counts pulled directly from the MedRebel codebase, git history, and production database, May 2026.</p>
+    </div>
+
+    <div class="card">
+      <h3>What MedRebel HR Actually Does</h3>
+      <ul>
+        <li><span class="lbl">HIPAA compliance tracking, audit logs, breach response</span></li>
+        <li><span class="lbl">Employee onboarding and offboarding workflows</span></li>
+        <li><span class="lbl">Customizable employee handbook with e-signatures</span></li>
+        <li><span class="lbl">Training assignments, due dates, completion records</span></li>
+        <li><span class="lbl">PTO requests, approvals, and balance tracking</span></li>
+        <li><span class="lbl">Role-based access by title and location</span></li>
+        <li><span class="lbl">Built for dental and medical, not generic HR</span></li>
+      </ul>
+      <p class="source">Each feature is shipped, in production, and audit-ready.</p>
+    </div>
+  </div>
+
+  <div class="band">
+    <h3>The Valuation Band, Three Ways</h3>
+    <div class="band-grid">
+      <div class="band-cell">
+        <div class="tier">Conservative</div>
+        <div class="amount">$555,000</div>
+        <div class="formula">3,700 hrs &times; $150</div>
+      </div>
+      <div class="band-cell">
+        <div class="tier">Midpoint</div>
+        <div class="amount">$647,500</div>
+        <div class="formula">3,700 hrs &times; $175</div>
+      </div>
+      <div class="band-cell">
+        <div class="tier">Top of Range</div>
+        <div class="amount">$740,000</div>
+        <div class="formula">3,700 hrs &times; $200</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="replaces">
+    <h3>What MedRebel HR Replaces Inside a Practice <span class="h3-sub">  ·  per practice, per month  ·  public vendor pricing, May 2026</span></h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Standalone Vendor Category</th>
+          <th class="right">Monthly Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>HIPAA compliance software (Compliancy Group, similar)</td><td class="right">$200 &ndash; $500</td></tr>
+        <tr><td>HR portal and onboarding (Bambee, BambooHR)</td><td class="right">$100 &ndash; $300</td></tr>
+        <tr><td>Employee handbook tool</td><td class="right">$50 &ndash; $150</td></tr>
+        <tr><td>Training tracker</td><td class="right">$50 &ndash; $150</td></tr>
+        <tr><td>PTO management system</td><td class="right">$50 &ndash; $100</td></tr>
+        <tr class="total"><td>Total Replaced Per Practice, Per Month</td><td class="right">$450 &ndash; $1,200</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<footer class="page-footer">
+  <p class="methodology-line"><strong>Methodology.</strong> 9,300 raw hours via COCOMO II on 93,629 production LOC across 283 source files, less a 60 percent AI-assisted productivity discount, equals 3,700 effective senior hours. Counts verified against codebase, git history, and live database (68 tables, 252 RLS policies, 189 functions, 1,432 commits in 81 active days). Rates: $150&ndash;$200/hr senior healthcare full-stack per Robert Half 2026, Toptal, Stack Overflow Dev Survey 2024. Vendor pricing: public sites, May 2026.  ·  Issued by <span class="name">Ryan Jacox</span>, Founder and CEO, MedRebel  ·  Confidential.</p>
+</footer>
+
+</div>
 
 </body>
 </html>
