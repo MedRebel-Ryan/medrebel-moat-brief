@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MedRebel HR. Proprietary and Competitive Brief. May 2026</title>
+<meta name="description" content="MedRebel HR proprietary and competitive brief. The three moats independent dental software competitors cannot cross: brand loyalty, healthcare compliance infrastructure, and integrated OS depth.">
+<meta property="og:title" content="MedRebel HR | Proprietary &amp; Competitive Brief">
+<meta property="og:description" content="The Single-App Era Is Over. Brand. Compliance. Integration. The three moats Brian from Odessa can't cross.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: Letter; margin: 0; }
+:root {
+  --navy: #0A1326;
+  --royal: #1F4FE8;
+  --ink: #1A2230;
+  --muted: #5A6573;
+  --rule: #D6DCE3;
+  --rule-strong: #B5BFCB;
+  --bg-soft: #F4F6F9;
+  --bg-card: #FAFBFD;
+  --green: #1B7A3B;
+  --cyan-soft: #9DCFFF;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+html, body {
+  background:#fff;
+  color: var(--ink);
+  font-family: 'Inter', -apple-system, Segoe UI, Arial, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.38;
+  -webkit-font-smoothing: antialiased;
+}
+.page { width: 100%; }
+.page + .page { page-break-before: always; }
+.body-pad { padding: 6pt 0.5in 4pt 0.5in; }
+
+/* DARK HEADER STRIP */
+.dark-header {
+  background: var(--navy);
+  color: #fff;
+  padding: 0 0.5in;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24pt;
+  height: 88pt;
+}
+.dark-header .title-left .brief {
+  font-size: 22pt;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.5px;
+  line-height: 1.05;
+  margin-bottom: 4pt;
+}
+.dark-header .title-left .meta {
+  font-size: 8pt;
+  font-weight: 600;
+  color: var(--cyan-soft);
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+.dark-header .logo-right { flex-shrink: 0; }
+.dark-header .logo-right img { height: 78pt; width: auto; display: block; }
+
+/* HEADLINE VALUE BOX (stacked layout for narrative briefs) */
+.valuebox {
+  background: var(--navy);
+  color: #fff;
+  border-radius: 8pt;
+  padding: 9pt 16pt;
+  margin: 0 0 6pt;
+}
+.valuebox .label {
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--cyan-soft);
+  margin-bottom: 4pt;
+}
+.valuebox .value {
+  font-size: 22pt;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.6px;
+  color: #fff;
+  margin-bottom: 5pt;
+}
+.valuebox .value .unit { font-size: 13pt; font-weight: 700; color: var(--cyan-soft); }
+.valuebox .basis {
+  font-size: 9pt;
+  color: #D6E5F5;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* STAT PILLS */
+.statrow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6pt;
+  margin: 0 0 6pt;
+}
+.statpill {
+  background: var(--bg-soft);
+  border: 1px solid var(--rule);
+  border-left: 3pt solid var(--royal);
+  border-radius: 6pt;
+  padding: 4pt 9pt;
+}
+.statpill .num {
+  font-size: 12pt;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1;
+  letter-spacing: -0.3px;
+  margin-bottom: 1pt;
+}
+.statpill .cap {
+  font-size: 7pt;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.statpill .sub {
+  font-size: 6.5pt;
+  font-weight: 500;
+  color: var(--muted);
+  margin-top: 2pt;
+  line-height: 1.2;
+}
+
+/* TWO-CARD ROW */
+.two-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8pt;
+  margin-bottom: 6pt;
+}
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--rule);
+  border-radius: 6pt;
+  padding: 6pt 10pt;
+}
+.card h3 {
+  font-size: 10pt;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 5pt;
+  letter-spacing: -0.3px;
+}
+.card ul { list-style: none; padding: 0; margin: 0; }
+.card li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8pt;
+  padding: 1.2pt 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: 8pt;
+  color: var(--ink);
+  line-height: 1.35;
+}
+.card li:last-child { border-bottom: none; }
+.card li .val { color: var(--navy); font-weight: 700; white-space: nowrap; }
+.card .source {
+  font-size: 7.5pt;
+  color: var(--muted);
+  margin-top: 5pt;
+  line-height: 1.4;
+}
+
+/* REFRAME / CALLOUT BAND */
+.band {
+  background: var(--bg-soft);
+  border: 1px solid var(--rule);
+  border-left: 3pt solid var(--royal);
+  border-radius: 6pt;
+  padding: 7pt 12pt;
+  margin-bottom: 6pt;
+}
+.band h3 {
+  font-size: 10pt;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 3pt;
+  letter-spacing: -0.3px;
+}
+.band .quote {
+  font-size: 9.5pt;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+/* COMPARISON TABLE (same family as the Replaces table) */
+.replaces {
+  background: var(--bg-card);
+  border: 1px solid var(--rule);
+  border-radius: 6pt;
+  padding: 6pt 11pt;
+  margin-bottom: 6pt;
+}
+.replaces h3 {
+  font-size: 10pt;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 5pt;
+  letter-spacing: -0.3px;
+}
+.replaces h3 .h3-sub {
+  font-weight: 500;
+  font-size: 8pt;
+  color: var(--muted);
+}
+.replaces table { width: 100%; border-collapse: collapse; font-size: 8pt; }
+.replaces th {
+  text-align: left;
+  padding: 2.5pt 5pt;
+  border-bottom: 2px solid var(--navy);
+  font-size: 7.5pt;
+  font-weight: 700;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.replaces th.right { text-align: right; }
+.replaces th.center { text-align: center; }
+.replaces td {
+  padding: 2.2pt 5pt;
+  border-bottom: 1px solid var(--rule);
+  color: var(--ink);
+  font-size: 8pt;
+}
+.replaces td.right { text-align: right; font-weight: 700; color: var(--navy); white-space: nowrap; }
+.replaces td.center { text-align: center; font-weight: 600; }
+.replaces td.us { color: var(--royal); font-weight: 800; }
+.replaces tr.total td {
+  border-bottom: none;
+  border-top: 2px solid var(--navy);
+  font-weight: 800;
+  font-size: 10pt;
+  color: var(--navy);
+  padding-top: 5pt;
+}
+
+/* METHODOLOGY FOOTER */
+.methodology-line {
+  font-size: 7pt;
+  color: var(--muted);
+  margin-top: 5pt;
+  line-height: 1.35;
+}
+.methodology-line strong { color: var(--ink); font-weight: 700; }
+.methodology-line .name { color: var(--navy); font-weight: 700; }
+
+/* WEB VIEW: keep body and container constrained so the brief is readable in a browser */
+@media screen {
+  body { background: #E8EBF0; padding: 24px 0; }
+  .page {
+    max-width: 8.5in;
+    margin: 0 auto 28px;
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(10,19,38,0.18);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .page + .page { page-break-before: auto; }
+}
+
+/* MOBILE BREAKPOINT */
+@media screen and (max-width: 768px) {
+  body { padding: 0; background: #fff; }
+  .page { box-shadow: none; border-radius: 0; margin-bottom: 16px; }
+  .dark-header {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 14pt 18pt;
+    gap: 10pt;
+    text-align: center;
+  }
+  .dark-header .title-left { text-align: center; }
+  .dark-header .title-left .brief { font-size: 20pt; }
+  .dark-header .logo-right img { height: 56pt; }
+  .body-pad { padding: 10pt 14pt 10pt; }
+  .valuebox { padding: 10pt 14pt; }
+  .valuebox .value { font-size: 19pt; }
+  .statrow { grid-template-columns: 1fr 1fr; gap: 6pt; }
+  .two-card { grid-template-columns: 1fr; gap: 8pt; }
+  .replaces table { font-size: 8.5pt; }
+  .replaces th, .replaces td { padding: 4pt 5pt; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================ PAGE 1 ============================ -->
+<div class="page">
+
+<header class="dark-header">
+  <div class="title-left">
+    <div class="brief">Proprietary &amp; Moat Brief</div>
+    <div class="meta">May 2026  ·  Confidential  ·  Page 1 of 2</div>
+  </div>
+  <div class="logo-right">
+    <img src="HR_Logo_Dark_Clean.svg" alt="MedRebel HR">
+  </div>
+</header>
+
+<div class="body-pad">
+
+  <div class="valuebox">
+    <div class="value">The Single-App Era Is Over</div>
+    <div class="basis">AI did not make software valuable. It made software cheap. The market is flooded with one-off apps anyone can spin up in a weekend. The moats that still hold are brand loyalty, healthcare-grade compliance infrastructure, and integrated operating system depth. Brian from Odessa can write code. He cannot build any of the three.</div>
+  </div>
+
+  <div class="statrow">
+    <div class="statpill"><div class="num">$100K+</div><div class="cap">Brand Build</div><div class="sub">Marketing agency equivalent</div></div>
+    <div class="statpill"><div class="num">252</div><div class="cap">RLS Policies</div><div class="sub">HIPAA-grade infrastructure</div></div>
+    <div class="statpill"><div class="num">5</div><div class="cap">PMS + CRM Integrations</div><div class="sub">OD, Dentrix, Curve, ES, GHL</div></div>
+    <div class="statpill"><div class="num">1</div><div class="cap">Unified OS Login</div><div class="sub">All tools speak to each other</div></div>
+  </div>
+
+  <div class="two-card">
+    <div class="card">
+      <h3>The Three Moats Brian From Odessa Can't Cross</h3>
+      <ul>
+        <li><span class="lbl"><strong>A. Brand Loyalty.</strong> We spent what a marketing agency would have billed at $100K+ to build a real brand. Story, vision, purpose, cause. We do not sell features, we sell outcomes. We care deeply about independent dentistry and independent healthcare. Brian has a logo and a Stripe link. He spends 60 percent of revenue on customer acquisition because no one knows his name. He loses clients overnight to the next cheaper vendor.</span></li>
+        <li><span class="lbl"><strong>B. Healthcare Compliance Infrastructure.</strong> HIPAA and data security are a built-in moat. AI coders working from a basement cannot build the security infrastructure required to operate in healthcare software. 252 row-level security policies, audit logs, breach response, BAA support. Brian's app cannot pass a single HIPAA audit.</span></li>
+        <li><span class="lbl"><strong>C. Integrated Operating System.</strong> We built MedRebel OS specifically to be a connected system. Once you crack integration with Open Dental and Dentrix, you can build a unified platform. One login on the left side. Every tool a practice needs talks to every other tool. Brian's app is a standalone island.</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>What "One Login" Actually Means</h3>
+      <ul>
+        <li><span class="lbl">Patient communication and messaging</span><span class="val">Live</span></li>
+        <li><span class="lbl">Digital intake and consent forms</span><span class="val">Live</span></li>
+        <li><span class="lbl">Team coaching and training</span><span class="val">Live</span></li>
+        <li><span class="lbl">Leadership dashboards and KPI data</span><span class="val">Live</span></li>
+        <li><span class="lbl">HR portal, PTO, handbook, e-sign</span><span class="val">Live</span></li>
+        <li><span class="lbl">HIPAA compliance tracking and audit logs</span><span class="val">Live</span></li>
+        <li><span class="lbl">PMS sync: Open Dental, Dentrix, Curve, Eagle Soft</span><span class="val">Live</span></li>
+      </ul>
+      <p class="source">Each module shares one identity layer, one permissions model, and one practice context. That is the operating system, not seven disconnected apps duct-taped together.</p>
+    </div>
+  </div>
+
+  <div class="band">
+    <h3>The Reframe</h3>
+    <p class="quote">"The new moats are brand, compliance infrastructure, and integrated OS depth. AI made writing one app commodity work. It did not make running an independent healthcare practice any simpler. We built the operating system. Brian wrote an app."</p>
+  </div>
+
+  <p class="methodology-line" style="padding: 0 4pt;"><strong>Bottom line.</strong> A single-app clone produces a feature. The value of MedRebel HR is that it lives inside MedRebel OS, where every feature is one piece of a connected workflow that an independent practice will not give up once they adopt it. That is the lock-in. That is the moat.  ·  Issued by <span class="name">Ryan Jacox</span>, Founder and CEO, MedRebel  ·  Confidential.</p>
+
+</div>
+</div>
+
+<!-- ============================ PAGE 2 ============================ -->
+<div class="page">
+
+<header class="dark-header">
+  <div class="title-left">
+    <div class="brief">Competitive Landscape</div>
+    <div class="meta">May 2026  ·  Confidential  ·  Page 2 of 2</div>
+  </div>
+  <div class="logo-right">
+    <img src="HR_Logo_Dark_Clean.svg" alt="MedRebel HR">
+  </div>
+</header>
+
+<div class="body-pad">
+
+  <div class="valuebox">
+    <div class="label">Market Snapshot</div>
+    <div class="value">$3B+ TAM. <span class="unit">Two incumbents. One gap.</span></div>
+    <div class="basis">HR for Health and CEDR Solutions validate the recurring demand. Neither has built a modern healthcare operating system. That is the wedge MedRebel HR is positioned to take.</div>
+  </div>
+
+  <div class="statrow">
+    <div class="statpill"><div class="num">$3B+</div><div class="cap">TAM</div><div class="sub">Healthcare HR + compliance</div></div>
+    <div class="statpill"><div class="num">$40M&ndash;$150M</div><div class="cap">HR for Health</div><div class="sub">Estimated valuation</div></div>
+    <div class="statpill"><div class="num">$15M&ndash;$60M</div><div class="cap">CEDR Solutions</div><div class="sub">Estimated valuation</div></div>
+    <div class="statpill"><div class="num">1</div><div class="cap">Modern Healthcare OS</div><div class="sub">Built for independents (us)</div></div>
+  </div>
+
+  <div class="replaces">
+    <h3>Capability Comparison <span class="h3-sub">  ·  feature-by-feature against the two incumbents</span></h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Capability</th>
+          <th class="center">HR for Health</th>
+          <th class="center">CEDR</th>
+          <th class="right">MedRebel HR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Healthcare-specific</td><td class="center">Yes</td><td class="center">Yes</td><td class="right us">Yes</td></tr>
+        <tr><td>HIPAA tracking</td><td class="center">Moderate</td><td class="center">Moderate</td><td class="right us">Strong</td></tr>
+        <tr><td>Onboarding</td><td class="center">Yes</td><td class="center">Yes</td><td class="right us">Yes</td></tr>
+        <tr><td>PTO tracking</td><td class="center">Yes</td><td class="center">Limited</td><td class="right us">Yes</td></tr>
+        <tr><td>Handbooks and e-sign</td><td class="center">Yes</td><td class="center">Yes</td><td class="right us">Yes</td></tr>
+        <tr><td>Role permissions</td><td class="center">Limited</td><td class="center">Limited</td><td class="right us">Strong</td></tr>
+        <tr><td>Mobile experience</td><td class="center">Weak</td><td class="center">Weak</td><td class="right us">Strong</td></tr>
+        <tr><td>AI and automation</td><td class="center">No</td><td class="center">No</td><td class="right us">Yes</td></tr>
+        <tr><td>CRM integration</td><td class="center">No</td><td class="center">No</td><td class="right us">Integrated (GHL)</td></tr>
+        <tr><td>Strategic position</td><td class="center">HR software</td><td class="center">Compliance consultancy</td><td class="right us">Healthcare OS</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="two-card">
+    <div class="card">
+      <h3>What The Incumbents Get Right</h3>
+      <ul>
+        <li><span class="lbl"><strong>Recurring revenue is real.</strong> $8M to $30M ARR at HR for Health and $6M to $15M revenue at CEDR. The willingness to pay is proven.</span></li>
+        <li><span class="lbl"><strong>Vertical focus matters.</strong> Both stayed in healthcare. Generic HR vendors do not win in this market.</span></li>
+        <li><span class="lbl"><strong>Compliance is the wedge.</strong> HIPAA, OSHA, and HR overlap is the buyer's loudest pain point.</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Where The Incumbents Are Vulnerable</h3>
+      <ul>
+        <li><span class="lbl"><strong>Service-heavy, not product-heavy.</strong> Margins capped, scaling hard.</span></li>
+        <li><span class="lbl"><strong>No AI, no automation.</strong> Built before the productivity reset.</span></li>
+        <li><span class="lbl"><strong>No CRM or operations integration.</strong> They are point tools, not operating systems.</span></li>
+        <li><span class="lbl"><strong>Weak mobile and weak permissions.</strong> Modern owners notice immediately.</span></li>
+        <li><span class="lbl"><strong>No movement, no founder.</strong> They sell software. We sell rebellion.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="band">
+    <h3>Investor Takeaway</h3>
+    <p class="quote">"Existing healthcare HR and compliance incumbents validate strong recurring demand but remain fragmented, service-heavy, and operationally limited. MedRebel HR wins through workflow consolidation, operational infrastructure, AI automation, communications integration, and healthcare-specific operational management."</p>
+  </div>
+
+  <p class="methodology-line" style="padding: 0 4pt;"><strong>Sources.</strong> HR for Health and CEDR Solutions revenue ranges via Crunchbase, ZoomInfo, and public reporting, May 2026. Valuation ranges via comparable healthcare HR SaaS multiples (4x to 10x revenue). TAM via Frost &amp; Sullivan and Grand View Research healthcare HR / compliance market reports.  ·  Issued by <span class="name">Ryan Jacox</span>, Founder and CEO, MedRebel  ·  Confidential.</p>
+
+</div>
+</div>
+
+</body>
+</html>
