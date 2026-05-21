@@ -147,13 +147,13 @@ html, body {
   background: var(--bg-card);
   border: 1px solid var(--rule);
   border-radius: 6pt;
-  padding: 6pt 10pt;
+  padding: 5pt 9pt;
 }
 .card h3 {
   font-size: 10pt;
   font-weight: 800;
   color: var(--navy);
-  margin-bottom: 5pt;
+  margin-bottom: 3pt;
   letter-spacing: -0.3px;
 }
 .card ul { list-style: none; padding: 0; margin: 0; }
@@ -161,11 +161,11 @@ html, body {
   display: flex;
   justify-content: space-between;
   gap: 8pt;
-  padding: 1.2pt 0;
+  padding: 0.8pt 0;
   border-bottom: 1px solid var(--rule);
-  font-size: 8pt;
+  font-size: 7.5pt;
   color: var(--ink);
-  line-height: 1.35;
+  line-height: 1.32;
 }
 .card li:last-child { border-bottom: none; }
 .card li .val { color: var(--navy); font-weight: 700; white-space: nowrap; }
@@ -255,11 +255,31 @@ html, body {
 .methodology-line {
   font-size: 7pt;
   color: var(--muted);
-  margin-top: 5pt;
-  line-height: 1.35;
+  margin: 0;
+  line-height: 1.4;
 }
 .methodology-line strong { color: var(--ink); font-weight: 700; }
 .methodology-line .name { color: var(--navy); font-weight: 700; }
+
+/* PAGE FOOTER BAND (edge-to-edge) */
+.page-footer {
+  background: var(--bg-soft);
+  border-top: 1px solid var(--rule);
+  padding: 5pt 0.5in;
+  margin-top: 4pt;
+}
+
+/* CARD SUB-HEADERS */
+.card .sub-header {
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--royal);
+  margin-top: 5pt;
+  margin-bottom: 2pt;
+}
+.card .sub-header:first-of-type { margin-top: 2pt; }
 
 /* WEB VIEW: keep body and container constrained so the brief is readable in a browser */
 @media screen {
@@ -351,18 +371,27 @@ html, body {
         <tr><td>AI and automation</td><td class="center">No</td><td class="center">No</td><td class="right us">Yes</td></tr>
         <tr><td>CRM integration</td><td class="center">No</td><td class="center">No</td><td class="right us">Integrated (GHL)</td></tr>
         <tr><td>Strategic position</td><td class="center">HR software</td><td class="center">Compliance consultancy</td><td class="right us">Healthcare OS</td></tr>
-        <tr class="total"><td>Pricing per practice, per month</td><td class="center">$149 to $500</td><td class="center">$249+ &nbsp;(plus $2,799 handbook)</td><td class="right us">$300 to $2,000</td></tr>
+        <tr class="total"><td>Pricing per practice, per month</td><td class="center">$149 to $500</td><td class="center">$249+ &nbsp;(plus $2,799 handbook)</td><td class="right us">$300</td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="two-card">
     <div class="card">
-      <h3>What The Incumbents Get Right</h3>
+      <h3>Reading The Incumbents</h3>
+      <div class="sub-header">What They Get Right</div>
       <ul>
-        <li><span class="lbl"><strong>Recurring revenue is real.</strong> $8M to $30M ARR at HR for Health and $6M to $15M revenue at CEDR. The willingness to pay is proven.</span></li>
+        <li><span class="lbl"><strong>Recurring revenue is real.</strong> $8M to $30M ARR at HR for Health and $6M to $15M at CEDR. Willingness to pay is proven.</span></li>
         <li><span class="lbl"><strong>Vertical focus matters.</strong> Both stayed in healthcare. Generic HR vendors do not win in this market.</span></li>
         <li><span class="lbl"><strong>Compliance is the wedge.</strong> HIPAA, OSHA, and HR overlap is the buyer's loudest pain point.</span></li>
+      </ul>
+      <div class="sub-header">Where They're Vulnerable</div>
+      <ul>
+        <li><span class="lbl"><strong>Service-heavy, not product-heavy.</strong> Margins capped, scaling hard.</span></li>
+        <li><span class="lbl"><strong>No AI, no automation.</strong> Built before the productivity reset.</span></li>
+        <li><span class="lbl"><strong>No CRM or operations integration.</strong> Point tools, not operating systems.</span></li>
+        <li><span class="lbl"><strong>Weak mobile, weak permissions.</strong> Modern owners notice immediately.</span></li>
+        <li><span class="lbl"><strong>No movement, no founder.</strong> They sell software. We sell rebellion.</span></li>
       </ul>
     </div>
 
@@ -371,16 +400,21 @@ html, body {
       <ul>
         <li><span class="lbl"><strong>The market is proven.</strong> $3B+ TAM. HR for Health at $40M to $150M valuation. CEDR at $15M to $60M. Two incumbents prove independent practices will pay recurring SaaS dollars for healthcare HR and compliance.</span></li>
         <li><span class="lbl"><strong>The wedge is real.</strong> Both incumbents are HR-only or compliance-consulting only. Neither has built a unified operating system. The gap between point tool and OS is ours to take.</span></li>
-        <li><span class="lbl"><strong>Pricing wins both ways.</strong> At $300/mo MedRebel HR is priced inside the incumbent band ($149 to $500). At $2,000/mo the full OS bundle replaces 5+ separate vendors. Either entry point lands the practice inside MedRebel OS, where switching costs compound.</span></li>
+        <li><span class="lbl"><strong>Pricing inside the incumbent band.</strong> At $300/mo, MedRebel HR sits inside the $149 to $500 range buyers already pay. The HR app is the entry point. Once a practice is in, every add-on module compounds the switching cost.</span></li>
         <li><span class="lbl"><strong>Capital efficient by design.</strong> Built in 81 days with $0 outside funding and $0 equity given up. 3,700 effective senior dev hours, AI-assisted. Every dollar of future ARR converts to clean enterprise value.</span></li>
         <li><span class="lbl"><strong>Exit math is straightforward.</strong> At 4x to 10x revenue multiples (the healthcare HR SaaS comp band), $5M ARR maps to $20M to $50M enterprise value. $10M ARR maps to $40M to $100M. The incumbents got there. We are built to get there faster.</span></li>
       </ul>
     </div>
-
-  <p class="methodology-line" style="padding: 0 4pt;"><strong>Sources.</strong> HR for Health and CEDR Solutions revenue ranges via Crunchbase, ZoomInfo, and public reporting, May 2026. Valuation ranges via comparable healthcare HR SaaS multiples (4x to 10x revenue). TAM via Frost &amp; Sullivan and Grand View Research healthcare HR / compliance market reports. Pricing: CEDR Solutions public pricing page (cedrsolutions.com/get-pricing) and HR for Health public pricing materials, May 2026.  ·  Issued by <span class="name">Ryan Jacox</span>, Founder and CEO, MedRebel  ·  Confidential.</p>
+  </div>
 
 </div>
-</div><!-- ============================ PAGE 2 ============================ -->
+
+<footer class="page-footer">
+  <p class="methodology-line"><strong>Sources.</strong> HR for Health and CEDR Solutions revenue ranges via Crunchbase, ZoomInfo, and public reporting, May 2026. Valuation ranges via comparable healthcare HR SaaS multiples (4x to 10x revenue). TAM via Frost &amp; Sullivan and Grand View Research healthcare HR / compliance market reports. Pricing: CEDR Solutions public pricing page (cedrsolutions.com/get-pricing) and HR for Health public pricing materials, May 2026.  ·  Issued by <span class="name">Ryan Jacox</span>, Founder and CEO, MedRebel  ·  Confidential.</p>
+</footer>
+
+</div>
+<!-- ============================ PAGE 2 ============================ -->
 <div class="page">
 
 <header class="dark-header">
@@ -437,9 +471,12 @@ html, body {
     <p class="quote">"The new moats are brand, compliance infrastructure, and integrated OS depth. AI made writing one app commodity work. It did not make running an independent healthcare practice any simpler. We built the operating system. Brian wrote an app."</p>
   </div>
 
-  <p class="methodology-line" style="padding: 0 4pt;"><strong>Bottom line.</strong> A single-app clone produces a feature. The value of MedRebel HR is that it lives inside MedRebel OS, where every feature is one piece of a connected workflow that an independent practice will not give up once they adopt it. That is the lock-in. That is the moat.  ·  Issued by <span class="name">Ryan Jacox</span>, Founder and CEO, MedRebel  ·  Confidential.</p>
-
 </div>
+
+<footer class="page-footer">
+  <p class="methodology-line"><strong>Bottom line.</strong> A single-app clone produces a feature. The value of MedRebel HR is that it lives inside MedRebel OS, where every feature is one piece of a connected workflow that an independent practice will not give up once they adopt it. That is the lock-in. That is the moat.  ·  Issued by <span class="name">Ryan Jacox</span>, Founder and CEO, MedRebel  ·  Confidential.</p>
+</footer>
+
 </div>
 
 
